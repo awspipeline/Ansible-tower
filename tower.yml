@@ -1,6 +1,8 @@
-
+---
 - hosts: localhost 
-  sudo: yes
+  become: true
+  become_user: ubuntu
+  become_method: sudo
 
   tasks:
    - name: Create Folder
