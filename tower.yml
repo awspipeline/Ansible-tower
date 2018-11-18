@@ -1,5 +1,7 @@
 
-- hosts: localhost
+- hosts: localhost 
+  sudo: yes
+
   tasks:
    - name: Create Folder
      file:
